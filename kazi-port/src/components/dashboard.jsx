@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Dashboard.css";
+import "./dashboard.css";
 
 const Dashboard = () => {
   const [userName] = useState("John Doe");
@@ -105,21 +105,6 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard-container">
-      <nav className="top-nav">
-        <div className="nav-logo">KaziPort</div>
-
-        <div className="nav-actions">
-          <span className="user-name">{userName}</span>
-
-          <button
-            className="btn-logout"
-            onClick={handleLogout}
-          >
-            Logout
-          </button>
-        </div>
-      </nav>
-
       <main className="main-content">
         <section className="welcome-section">
           <h1 className="welcome-title">

@@ -1,11 +1,9 @@
 /* Google Fonts should be imported in index.html */
 /* Inter & Manrope */
 
-body {
+.dashboard-container {
   background-color: #F4F7FC;
   font-family: "Inter", sans-serif;
-  margin: 0;
-  padding: 0;
 }
 
 .material-symbols-outlined {

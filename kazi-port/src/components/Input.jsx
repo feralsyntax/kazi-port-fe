@@ -14,7 +14,7 @@ function Input({ label, id, type = "text", placeholder, value, onChange, name, r
         value={value}
         onChange={onChange}
         required={required}
-        className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+        className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-[#00A884] focus:ring-2 focus:ring-[#00A884]/15"
       />
     </div>
   );
