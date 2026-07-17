@@ -7,6 +7,7 @@ import Register from "./pages/Register";
 import Portfolio from "./pages/Portfolio";
 import Search from "./pages/Search";
 import './App.css'
+import Withdraw from './components/Withdraw'
 import Dashboard from './components/Dashboard'
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
       <Route path="/login" element={<MainLayout><Login /></MainLayout>} />
       <Route path="/register" element={<MainLayout><Register /></MainLayout>} />
       <Route path="/portfolio/:username" element={<MainLayout><Portfolio /></MainLayout>} />
-      <Route path="/search" element={<MainLayout><Search /></MainLayout>} />
+      <Route path="/checkout" element={<MainLayout><Withdraw /></MainLayout>} />
       <Route path="/dashboard" element={<MainLayout><Dashboard /></MainLayout>} />
 
       <Route
