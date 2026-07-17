@@ -1,0 +1,304 @@
+/* Google Fonts should be imported in index.html */
+/* Inter & Manrope */
+
+body {
+  background-color: #F4F7FC;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+  vertical-align: middle;
+}
+
+/* Dashboard Container */
+
+.dashboard-container {
+  min-height: 100vh;
+}
+
+/* ===========================
+   Navigation
+=========================== */
+
+.top-nav {
+  background-color: #0B2A4A;
+  color: #FFFFFF;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(11, 42, 74, 0.1);
+}
+
+.nav-logo {
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn-logout {
+  color: #00A884;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.btn-logout:hover {
+  opacity: 0.8;
+}
+
+/* ===========================
+   Main Content
+=========================== */
+
+.main-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 32px;
+}
+
+.welcome-section {
+  margin-bottom: 32px;
+}
+
+.welcome-title {
+  margin: 0 0 8px;
+  color: #0B2A4A;
+  font-family: "Manrope", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.welcome-subtitle {
+  margin: 0;
+  color: #64748B;
+  font-size: 16px;
+}
+
+/* ===========================
+   Task Grid
+=========================== */
+
+.task-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 1024px) {
+  .task-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .task-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main-content {
+    padding: 24px 16px;
+  }
+
+  .top-nav {
+    padding: 16px;
+  }
+}
+
+/* ===========================
+   Task Cards
+=========================== */
+
+.task-card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(11, 42, 74, 0.05);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.task-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(11, 42, 74, 0.08);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.task-title {
+  margin: 0;
+  color: #0B2A4A;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* ===========================
+   Company & Description
+=========================== */
+
+.company-tag {
+  color: #00A884;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.task-description {
+  color: #1E293B;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  flex-grow: 1;
+}
+
+/* ===========================
+   Badges
+=========================== */
+
+.badge-container {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.badge {
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.badge-open {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: #F59E0B;
+}
+
+.badge-done {
+  background-color: rgba(0, 168, 132, 0.1);
+  color: #00A884;
+}
+
+.badge-pending {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: #EF4444;
+}
+
+.badge-in-progress {
+  background-color: rgba(67, 93, 128, 0.1);
+  color: #435D80;
+}
+
+/* ===========================
+   Payment Status
+=========================== */
+
+.payment-status {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.payment-paid {
+  color: #00A884;
+}
+
+.payment-unpaid {
+  color: #64748B;
+}
+
+/* ===========================
+   Card Buttons
+=========================== */
+
+.card-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.btn-primary {
+  flex: 1;
+  background-color: #00A884;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #008A6E;
+}
+
+.btn-secondary {
+  flex: 1;
+  background-color: #F1F5F9;
+  color: #64748B;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: not-allowed;
+  opacity: 0.6;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ===========================
+   Micro Interactions
+=========================== */
+
+.btn-primary:active,
+.btn-logout:active {
+  transform: scale(0.98);
+}

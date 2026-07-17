@@ -4,9 +4,12 @@ import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import Dashboard from "./pages/Dashboard";
 import Portfolio from "./pages/Portfolio";
 import Search from "./pages/Search";
+import './App.css'
+import Dashboard from './components/Dashboard'
+
+function App() {
 
 function App() {
   return (
