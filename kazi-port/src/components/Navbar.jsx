@@ -3,8 +3,8 @@ import { Search, UserCircle2, Sparkles } from "lucide-react";
 
 const navItems = [
   { label: "Home", to: "/" },
-  { label: "Search", to: "/search" },
   { label: "Dashboard", to: "/dashboard" },
+  { label: "Get Paid", to: "/checkout" },
 ];
 
 function Navbar() {

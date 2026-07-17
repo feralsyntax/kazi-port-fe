@@ -51,7 +51,7 @@ function Login() {
   };
 
   return (
-    <div className="min-h-[calc(100vh-12rem)] bg-slate-50 px-4 py-16 sm:px-6 lg:px-8">
+    <div className="min-h-[calc(100vh-12rem)] px-4 py-16 sm:px-6 lg:px-8">
       <div className="mx-auto flex max-w-6xl items-center justify-center">
         <Card className="w-full max-w-2xl p-8 sm:p-10">
           <div className="max-w-xl">
@@ -59,7 +59,7 @@ function Login() {
             <h1 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
               Sign in to your KaziPort account.
             </h1>
-            <p className="mt-4 text-lg text-slate-600">
+            <p className="mt-4 text-lg leading-8 text-slate-600">
               Continue building a portfolio that reflects your academic and professional journey.
             </p>
           </div>

@@ -5,13 +5,14 @@
 
 /* ---------- Base ---------- */
 
-* {
+.withdraw-page,
+.withdraw-page * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
+.withdraw-page {
   font-family: "Hanken Grotesk", sans-serif;
   background: #f8f9ff;
   color: #0b1c30;

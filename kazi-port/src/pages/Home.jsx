@@ -30,8 +30,9 @@ const highlights = [
 
 function Home() {
   return (
-    <div className="bg-slate-50">
-      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+    <div className="relative overflow-hidden">
+      <section className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+        <div className="absolute inset-x-0 top-0 -z-10 h-72 rounded-full bg-[#00A884]/10 blur-3xl" />
         <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
             <div className="inline-flex items-center gap-2 rounded-full border border-[#00A884]/20 bg-[#E8F8F4] px-3 py-1 text-sm font-medium text-[#008A6E]">
