@@ -5,11 +5,9 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Portfolio from "./pages/Portfolio";
-import Search from "./pages/Search";
+import './App.css'
 import Withdraw from './components/Withdraw'
 import Dashboard from './components/Dashboard'
-
-
 
 function App() {
   return (
