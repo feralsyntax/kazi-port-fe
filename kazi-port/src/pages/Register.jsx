@@ -147,9 +147,10 @@ function Register() {
             />
 
             {/* Premium Button with Disabled and Loading States */}
-            <Button type="submit" className="w-full" disabled={isLoading}>
+            <Button type="submit" className="w-full" disabled={isLoading || !formData.email || !formData.university || !formData.course || !formData.password || !formData.confirmPassword}>
               {isLoading ? "Creating account..." : "Sign Up"}
               {!isLoading && <ArrowRight size={16} className="ml-2" />}
+              
             </Button>
           </form>
 
