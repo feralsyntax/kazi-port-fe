@@ -105,7 +105,7 @@ function Login() {
             </div>
 
             {/* Added dynamic text and disabled states to prevent double submission */}
-            <Button type="submit" className="w-full" disabled={isLoading}>
+            <Button type="submit" className="w-full" disabled={isLoading|| !formData.email || !formData.password}>
               {isLoading ? "Signing in..." : "Continue"}
               {!isLoading && <ArrowRight size={16} className="ml-2" />}
             </Button>
