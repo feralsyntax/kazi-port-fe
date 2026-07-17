@@ -9,7 +9,7 @@ import Search from "./pages/Search";
 import './App.css'
 import Dashboard from './components/Dashboard'
 
-function App() {
+
 
 function App() {
   return (
