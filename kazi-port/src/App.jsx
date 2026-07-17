@@ -1,11 +1,11 @@
 import './App.css'
-import Dashboard from './components/Dashboard'
+import Withdraw from './components/Withdraw'
 
 function App() {
 
   return (
     <>
-      <Dashboard />
+      <Withdraw />
     </>
   )
 }
